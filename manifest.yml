@@ -21,7 +21,7 @@ instances:
     runtime:
       name: paasmaker.runtime.ruby.rbenv
       parameters:
-        launch_command: "bundle exec ruby app.py -p %(port)d"
+        launch_command: "bundle exec ruby app.rb -p %(port)d"
       version: 1.9.3
     startup:
       - plugin: paasmaker.startup.shell
