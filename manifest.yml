@@ -28,14 +28,7 @@ instances:
         parameters:
           commands:
             - bundle install
-            - ruby -v > ruby-startup-version
-    placement:
-      plugin: paasmaker.placement.default
-    hostnames:
-      - sinatra-simple.local.paasmaker.net
-    crons:
-      - runspec: '* * * * *'
-        uri: /environ
+            - ruby -v > ruby-startup-version.txt
 
 services:
   - name: variables
